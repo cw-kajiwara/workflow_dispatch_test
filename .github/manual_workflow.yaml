@@ -1,0 +1,16 @@
+# workflow dispatch sample
+
+name: Manual Workflow
+
+on:
+  workflow_dispatch:
+
+# environment is test
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      - name: deploy
+        run: echo 'deploy...'
+
