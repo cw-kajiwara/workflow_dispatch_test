@@ -12,5 +12,5 @@ jobs:
     environment: test
     steps:
       - name: deploy
-        run: echo 'deploy...'
+        run: echo 'modified...'
 
